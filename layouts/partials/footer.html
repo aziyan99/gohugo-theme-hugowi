@@ -1,0 +1,25 @@
+<footer class="flex items-center justify-between border-t border-b border-yellow-500 bg-white p-3 text-xs">
+    <div></div>
+    <div>
+        <span>{{ i18n "copyright" }} {{ .Site.Title }}</span>
+    </div>
+    <div class="mr-3">{{ i18n "poweredBy" }} <img src="https://raw.githubusercontent.com/gohugoio/gohugoioTheme/master/static/images/hugo-logo-wide.svg?sanitize=true" alt="hugo logo"></div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+    <script>
+        window.store = {
+            {{ range where .Site.Pages "Section" "posts" }}
+            "{{ .Permalink }}": {
+                "title": "{{ .Title  }}",
+                "tags": [{{ range .Params.Tags }}"{{ . }}",{{ end }}],
+                "content": {{ .Content | plainify }},
+                "url": "{{ .Permalink }}"
+            },
+            {{ end }}
+        }
+    </script>
+    <script src="/js/lunr.min.js"></script>
+    <script src="/js/search.js"></script>
+</footer>

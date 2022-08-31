@@ -1,0 +1,38 @@
+[navigation]
+other = "navigation"
+
+[search]
+other = "search"
+
+[links]
+other = "links"
+
+[randomPost]
+other = "Random Posts"
+
+[mainPage]
+other = "Main Page"
+
+[sitemap]
+other = "sitemap"
+
+[rss]
+other = "rss"
+
+[searchSite]
+other = "Search site"
+
+[tags]
+other = "Tags:"
+
+[publishedDate]
+other = "This page was published on"
+
+[searchResults]
+other = "search results"
+
+[copyright]
+other = "©2022"
+
+[poweredBy]
+other = "Powered by"

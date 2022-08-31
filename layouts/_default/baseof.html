@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+    {{ partial "head.html" . }}
+
+<body class="text-sm bg-gray-50">
+    {{ partial "header.html" . }}
+    <div class="flex bg-gray-50 py-5 text-sm">
+        <aside class="grow-0 w-40 mr-2">
+            
+            {{ partial "logo.html" . }}
+
+            {{ partial "menu.html" . }}
+
+            {{ partial "search.html" . }}
+
+            {{ partial "links.html" . }}
+            
+        </aside>
+        <main class="grow mt-4 border border-r-0 border-gray-500 bg-white">
+            <div id="content" class="p-4">
+                {{- block "main" . }}{{- end }}
+            </div>
+        </main>
+    </div>
+    {{ partial "footer.html" . }}
+</body>
+
+</html>

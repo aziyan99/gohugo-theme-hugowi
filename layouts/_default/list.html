@@ -1,0 +1,17 @@
+{{ define "main" }}
+<div class="border-b border-gray-500">
+    <h1 class="text-3xl w-full">{{ .Title }}</h1>
+</div>
+<div class="grid grid-cols-3 my-5">
+    {{ range .Pages.ByPublishDate.Reverse }}
+        <div class="text-sm">       
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgb(107 114 128)" class="w-2 h-2 inline align-middle">
+                <path fill-rule="evenodd" d="M4.5 7.5a3 3 0 013-3h9a3 3 0 013 3v9a3 3 0 01-3 3h-9a3 3 0 01-3-3v-9z" clip-rule="evenodd" />
+            </svg>
+            <a class="text-blue-700 hover:underline inline align-middle" href="{{ .RelPermalink }}">
+                <span>{{ .Title }}</span>
+            </a>
+        </div>
+    {{ end }}
+</div>
+{{ end }}

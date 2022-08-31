@@ -1,0 +1,10 @@
+{{ define "main" }}
+    <div class="border-b border-gray-500 mb-3">
+        <h1 class="text-3xl w-full">{{ .Title }}</h1>
+    </div>
+    
+    <div class="markdown-body text-sm">
+        {{ .Content }}
+    </div>
+    {{ partial "metadata.html" . }}
+{{ end }}

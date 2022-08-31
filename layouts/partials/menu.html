@@ -1,0 +1,13 @@
+<div class="my-5">
+    <p class="ml-2">{{ i18n "navigation" }}</p>
+    <nav class="border border-l-0 border-gray-500 bg-white p-2">
+        <ul class="list-square ml-5">
+            {{ range .Site.Menus.main }}
+                <li class="text-gray-500">
+                    {{ $text := print .Name | safeHTML }}
+                    <a href="{{ .URL }}" class="text-blue-700 hover:underline">{{ $text }}</a>
+                </li>
+            {{ end }}
+        </ul>
+    </nav>
+</div>
