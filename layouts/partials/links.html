@@ -5,7 +5,7 @@
             {{ range .Site.Params.link }}
             <li class="text-gray-500">
                 {{ $text := print .name | safeHTML }}
-                <a href="{{ .URL }}" class="text-blue-700 hover:underline" target="_blank">{{ $text }}</a>
+                <a href="{{ .url }}" class="text-blue-700 hover:underline" target="_blank">{{ $text }}</a>
             </li>
             {{ end }}
         </ul>
