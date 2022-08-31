@@ -1,7 +1,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}" />
-    <meta name="keywords" content="{{if .IsHome}}{{ $.Site.Params.keywords }}{{else}}{{.tags}}{{end}}">
+    <meta name="keywords" content="{{ $.Site.Params.keywords }}">
     <meta name="author" content="{{ $.Site.Params.author }}">
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     <link rel="stylesheet" type="text/css" href="/css/gh-markdown.css">
