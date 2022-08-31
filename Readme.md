@@ -1,2 +1,2 @@
 # Hugowi
-![img-1](https://ibb.co/djX7qDy)
+![img-1](https://i.ibb.co/sbctGqr/hugowi.png)
