@@ -1,0 +1,1 @@
+# Hugowi, A wiki like theme for Hugo
