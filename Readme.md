@@ -1,1 +1,2 @@
-# Hugowi, A wiki like theme for Hugo
+# Hugowi
+![img-1](https://ibb.co/djX7qDy)
