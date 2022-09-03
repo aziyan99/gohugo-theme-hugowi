@@ -105,7 +105,7 @@
   
   .markdown-body img {
     border-style: none;
-    max-width: 100%;
+    max-width: 50%;
     box-sizing: content-box;
     background-color: #ffffff;
   }
@@ -954,8 +954,4 @@
 
   pre code.hljs table {
     margin-bottom: 0 !important;
-  }
-
-  .markdown-body img {
-    width: 50%;
   }
