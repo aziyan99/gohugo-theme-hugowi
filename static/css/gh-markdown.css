@@ -955,3 +955,7 @@
   pre code.hljs table {
     margin-bottom: 0 !important;
   }
+
+  .markdown-body img {
+    width: 50%;
+  }
