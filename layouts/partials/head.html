@@ -6,6 +6,7 @@
     />
 
     <meta name="keywords" content="{{ if .Params.tags }}{{ with .Params.tags }}{{ range . }}{{ . }},{{ end }}{{ end }}{{ else if .Site.Params.keywords }}{{ .Site.Params.keywords }}{{ else }} {{ i18n "keywords" }} {{ end }}">
+    <link rel="canonical" href="{{ .Permalink }}" />
     <meta name="author" content="{{ $.Site.Params.author }}">
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     <link rel="stylesheet" type="text/css" href="/css/gh-markdown.css">
