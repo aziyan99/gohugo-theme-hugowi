@@ -36,3 +36,9 @@ other = "©2022"
 
 [poweredBy]
 other = "Powered by"
+
+[description]
+other = "An learning journals and notes"
+
+[keywords]
+other = "HTML, CSS, Js, PHP, Programming, CPP, Python, Go, Web Programming, Java, C, Rust, MySQL, DBMS"

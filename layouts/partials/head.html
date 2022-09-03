@@ -1,14 +1,18 @@
 <head>
     <meta charset="utf-8">
-    <meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}" />
-    <meta name="keywords" content="{{ $.Site.Params.keywords }}">
+    <meta
+        name="description"
+        content="{{ if .Params.summary }}{{ .Params.summary }}{{ else if .Site.Params.Description }}{{ .Site.Params.Description }}{{ else }} {{ i18n 'description' }} {{ end }}"
+    />
+
+    <meta name="keywords" content="{{ if .Params.tags }}{{ .Params.tags }}{{ else if .Site.Params.keywords }}{{ .Site.Params.keywords }}{{ else }} {{ i18n 'keywords' }} {{ end }}">
     <meta name="author" content="{{ $.Site.Params.author }}">
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     <link rel="stylesheet" type="text/css" href="/css/gh-markdown.css">
     <link rel="stylesheet"
       href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
     <link rel="icon" type="image/x-icon" href="{{ .Site.Params.githubAvatar }}">
-    {{ $title := print .Site.Title " - " .Title }}
+    {{ $title := print .Site.Title " | " .Title }}
     {{ if .IsHome }}
         {{ $title = .Site.Title }}
     {{ end }}
