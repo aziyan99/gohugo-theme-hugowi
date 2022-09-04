@@ -580,8 +580,8 @@ video {
   margin-top: 1rem;
 }
 
-.ml-1 {
-  margin-left: 0.25rem;
+.mt-1 {
+  margin-top: 0.25rem;
 }
 
 .mr-3 {
@@ -594,10 +594,6 @@ video {
 
 .ml-5 {
   margin-left: 1.25rem;
-}
-
-.mt-1 {
-  margin-top: 0.25rem;
 }
 
 .block {
