@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html prefix="og: http://ogp.me/ns#" lang="{{ .Language }}">
 
-    {{ partial "head.html" . }}
+{{ partial "head.html" . }}
 
 <body class=" bg-gray-50 max-w-screen min-w-screen">
     {{ partial "header.html" . }}
     <div class="hidden bg-gray-50 py-5 md:flex lg:flex">
         <aside class="grow-0 w-40 mr-2">
-            
+
             {{ partial "logo.html" . }}
 
             {{ partial "menu.html" . }}
@@ -15,7 +15,7 @@
             {{ partial "search.html" . }}
 
             {{ partial "links.html" . }}
-            
+
         </aside>
         <main class="grow mt-4 border border-r-0 border-gray-500 bg-white">
             <div id="content" class="p-4">
@@ -23,6 +23,36 @@
             </div>
         </main>
     </div>
+
+    <!-- Mobile -->
+    <nav class="grid grid-cols-6 border-b border-gray-500 bg-gray-50 px-5 align-middle md:hidden lg:hidden">
+        <div class="col-span-3">
+            <div class="py-3">
+                <button class="border border-yellow-500 bg-white p-1 focus:outline focus:outline-blue-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-7 w-7">
+                        <path fill-rule="evenodd"
+                            d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="col-span-3">
+            <div class="flex p-3 text-center">
+                <form id="search" action='{{ with .GetPage "/search" }}{{.Permalink}}{{end}}' method="get">
+                    <input type="text" class="border border-gray-500 p-1" placeholder="Search text" />
+                    <button class="ml-1 rounded border border-gray-500 bg-gray-100 p-1 focus:outline focus:outline-blue-700"
+                        type="submit">{{ i18n "search" }}</button>
+                </form>
+                <div id="results" class="text-left"></div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="bg-white p-5">
+        {{- block "main" . }}{{- end }}
+    </section>
+
     {{ partial "footer.html" . }}
 </body>
 
