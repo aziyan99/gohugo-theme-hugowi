@@ -1,10 +1,10 @@
 <div class="p-2 mt-3">
     <div class="w-full border border-gray-400 bg-gray-50 p-1">
-        <a href="/tags/" class="text-blue-700 hover:underline">{{ i18n "tags" }}</a>
+        <a href="/tags/" class="text-blue-700 hover:underline focus:outline focus:outline-blue-700">{{ i18n "tags" }}</a>
         {{ with .Params.tags }}
         {{ range . }}
         {{ $href := print (absURL "tags/") (urlize .) }}
-        <a href="{{ $href }}" class="border-r border-gray-400 px-2 text-blue-700 hover:underline">{{ . }}</a>
+        <a href="{{ $href }}" class="border-r border-gray-400 px-2 text-blue-700 hover:underline focus:outline focus:outline-blue-700">{{ . }}</a>
         {{ end }}
         {{ end }}
     </div>

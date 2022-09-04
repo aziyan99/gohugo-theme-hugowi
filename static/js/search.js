@@ -7,7 +7,7 @@ function displayResults(results, store) {
     for (const n in results) {
       const item = store[results[n].ref];
       resultList +=`
-        <a href="${item.url}" class="text-blue-700 hover:underline block">${item.title.substring(0, 15)} ...</a> 
+        <a href="${item.url}" class="text-blue-700 hover:underline block focus:outline focus:outline-blue-700">${item.title.substring(0, 12)} ...</a> 
       `;
     }
     resultList += "</div>";
