@@ -22,3 +22,14 @@
             </div>-->
     </div>
 </nav>
+
+<nav class="border-b border-gray-500 bg-gray-50 px-5 align-middle md:hidden lg:hidden" x-show="showMenu">
+    <ul class="py-3">
+        {{ range .Site.Menus.main }}
+            <li class="py-2">
+                {{ $text := print .Name | safeHTML }}
+                <a href="{{ .URL }}" class="text-blue-700 underline focus:outline focus:outline-blue-700 p-2">{{ $text }}</a>
+            </li>
+        {{ end }}
+    </ul>
+</nav>
