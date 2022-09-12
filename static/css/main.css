@@ -747,6 +747,10 @@ video {
   padding: 1rem;
 }
 
+.p-5 {
+  padding: 1.25rem;
+}
+
 .p-3 {
   padding: 0.75rem;
 }
@@ -757,10 +761,6 @@ video {
 
 .p-1 {
   padding: 0.25rem;
-}
-
-.p-5 {
-  padding: 1.25rem;
 }
 
 .py-5 {
@@ -781,6 +781,11 @@ video {
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .px-1 {
@@ -832,6 +837,11 @@ video {
 .text-gray-700 {
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
+.underline {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 
 .hover\:underline:hover {
