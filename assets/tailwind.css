@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-ol, ul, menu {
-    list-style: inherit !important;
+ol {
+    list-style: decimal !important;
+}
+
+ul {
+    list-style: disc !important;
 }
