@@ -836,12 +836,8 @@ video {
           text-decoration-line: underline;
 }
 
-ol {
+ol, ul {
   list-style: decimal !important;
-}
-
-ul {
-  list-style: disc !important;
 }
 
 .hover\:underline:hover {

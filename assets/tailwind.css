@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-ol {
+ol, ul {
     list-style: decimal !important;
-}
-
-ul {
-    list-style: disc !important;
 }
