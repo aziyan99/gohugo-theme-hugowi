@@ -1,6 +1,6 @@
 # Hugowi
 
-> An wiki look like theme
+> An mediawiki look like theme
 
 ![img-1](https://i.ibb.co/sbctGqr/hugowi.png)
 
