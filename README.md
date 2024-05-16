@@ -1,5 +1,5 @@
 <p align="center">
-    <h2>Hugowi</h2>
+    <h1 align="center" style="border-bottom: none;">Hugowi</h1>
 </p>
 
 <p align="center">
@@ -10,18 +10,16 @@
 
 ---
 
-> An mediawiki look like theme
-
 ![img-1](https://i.ibb.co/sbctGqr/hugowi.png)
 
-### Installation
+## Installation
 ```shell
 git submodule add https://github.com/aziyan99/gohugo-theme-hugowi.git themes/hugowi
 
 echo theme = \"hugowi\" >> config.toml
 ```
 
-### Upgrade
+## Upgrade
 ```shell
 git submodule update themes/hugowi
 ```
@@ -32,7 +30,7 @@ if it's **the first time** you checkout the repo you need to use `--init` first
 git submodule update themes/hugowi
 ```
 
-### The `config.toml`
+## The `config.toml`
 ```toml
 baseURL = 'https://aziyan99.github.io/'
 languageCode = 'en-us'
@@ -90,7 +88,7 @@ copyright = '2022 Raja Azian All rights reserved'
   priority = 0.5
 ```
 
-### Contributing
+## Contributing
 
 If you're interested in contributing to Hugowi, please post an issue first before submitting a pull request.
 
