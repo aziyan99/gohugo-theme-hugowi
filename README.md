@@ -1,17 +1,27 @@
-# Hugowi
+<p align="center">
+    <h2>Hugowi</h2>
+</p>
+
+<p align="center">
+    <img src="https://img.shields.io/github/issues/aziyan99/gohugo-theme-hugowi">
+    <img src="https://img.shields.io/github/stars/aziyan99/gohugo-theme-hugowi">
+    <img src="https://img.shields.io/github/license/aziyan99/gohugo-theme-hugowi">
+</p>
+
+---
 
 > An mediawiki look like theme
 
 ![img-1](https://i.ibb.co/sbctGqr/hugowi.png)
 
-## Installation
+### Installation
 ```shell
 git submodule add https://github.com/aziyan99/gohugo-theme-hugowi.git themes/hugowi
 
 echo theme = \"hugowi\" >> config.toml
 ```
 
-## Upgrade
+### Upgrade
 ```shell
 git submodule update themes/hugowi
 ```
@@ -22,7 +32,7 @@ if it's **the first time** you checkout the repo you need to use `--init` first
 git submodule update themes/hugowi
 ```
 
-## The `config.toml`
+### The `config.toml`
 ```toml
 baseURL = 'https://aziyan99.github.io/'
 languageCode = 'en-us'
@@ -79,3 +89,8 @@ copyright = '2022 Raja Azian All rights reserved'
   filename = 'sitemap.xml'
   priority = 0.5
 ```
+
+### Contributing
+
+If you're interested in contributing to Hugowi, please post an issue first before submitting a pull request.
+
