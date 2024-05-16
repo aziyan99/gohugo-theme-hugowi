@@ -1,16 +1,25 @@
 {
-  "name": "hugowi",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "@aziyan99/gohugo-theme-hugowi",
+  "version": "1.2.0",
+  "description": "Wikipedia look like theme for Hugo",
+  "main": "assets/tailwind.css",
   "scripts": {
-    "build-tw": "npx tailwindcss -i ./assets/tailwind.css -o ./static/css/main.css",
+    "dev": "npx tailwindcss -i ./assets/tailwind.css -o ./static/css/main.css --watch",
+    "build": "npx tailwindcss -i ./assets/tailwind.css -o ./static/css/main.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aziyan99/gohugo-theme-hugowi.git"
+  },
+  "keywords": ["hugo", "tailwindcss", "cms", "blog"],
+  "author": "Raja Azian",
+  "license": "MIT",
+  "bugs": {
+    "url": "git+https://github.com/aziyan99/gohugo-theme-hugowi/issues"
+  },
+  "homepage": "https://github.com/aziyan99/gohugo-theme-hugowi?tab=readme-ov-file#hugowi",
   "devDependencies": {
-    "tailwindcss": "^3.1.8"
+    "tailwindcss": "^3.4.3"
   }
 }
