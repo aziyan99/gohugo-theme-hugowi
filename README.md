@@ -5,14 +5,25 @@
 ![img-1](https://i.ibb.co/sbctGqr/hugowi.png)
 
 ## Installation
-```
+```shell
 git submodule add https://github.com/aziyan99/gohugo-theme-hugowi.git themes/hugowi
 
 echo theme = \"hugowi\" >> config.toml
 ```
 
-## config.toml
+## Upgrade
+```shell
+git submodule update themes/hugowi
 ```
+
+if it's **the first time** you checkout the repo you need to use `--init` first
+
+```shell
+git submodule update themes/hugowi
+```
+
+## The `config.toml`
+```toml
 baseURL = 'https://aziyan99.github.io/'
 languageCode = 'en-us'
 title = 'Aziyan99'
