@@ -1,14 +1,12 @@
 <p align="center">
-    <h1 align="center" style="border-bottom: none;">Hugowi</h1>
+    <h1 align="center">Hugowi</h1>
 </p>
 
 <p align="center">
-    <img src="https://img.shields.io/github/issues/aziyan99/gohugo-theme-hugowi">
     <img src="https://img.shields.io/github/stars/aziyan99/gohugo-theme-hugowi">
+    <img src="https://img.shields.io/github/issues/aziyan99/gohugo-theme-hugowi">
     <img src="https://img.shields.io/github/license/aziyan99/gohugo-theme-hugowi">
 </p>
-
----
 
 ![img-1](https://i.ibb.co/sbctGqr/hugowi.png)
 
